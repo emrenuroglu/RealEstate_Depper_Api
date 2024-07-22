@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DTO\ServiceDtos\**" />
+    <Compile Remove="DTO\WhoWeAreDto\**" />
+    <Compile Remove="Views\Service\**" />
+    <Compile Remove="Views\Shared\Components\_DefaultWhoWeAreComponentPartial\**" />
+    <Content Remove="DTO\ServiceDtos\**" />
+    <Content Remove="DTO\WhoWeAreDto\**" />
+    <Content Remove="Views\Service\**" />
+    <Content Remove="Views\Shared\Components\_DefaultWhoWeAreComponentPartial\**" />
+    <EmbeddedResource Remove="DTO\ServiceDtos\**" />
+    <EmbeddedResource Remove="DTO\WhoWeAreDto\**" />
+    <EmbeddedResource Remove="Views\Service\**" />
+    <EmbeddedResource Remove="Views\Shared\Components\_DefaultWhoWeAreComponentPartial\**" />
+    <None Remove="DTO\ServiceDtos\**" />
+    <None Remove="DTO\WhoWeAreDto\**" />
+    <None Remove="Views\Service\**" />
+    <None Remove="Views\Shared\Components\_DefaultWhoWeAreComponentPartial\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.12" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.35.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\EstateAgent\Data\" />
+    <Folder Include="Areas\EstateAgent\Models\" />
+    <Folder Include="wwwroot\starter\NewFolder\" />
+  </ItemGroup>
+
+</Project>
